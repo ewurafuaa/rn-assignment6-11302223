@@ -54,13 +54,12 @@ const styles = StyleSheet.create({
         width: 90,
         height: 120,
         marginRight: 11,
-        marginLeft: 29
+        
         
     }, 
 
     productDetails:{
         flex: 1,
-        marginRight: 15
     },
 
     name: {
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems: 'center',
         height: '100%',
-        right: 60
+        right: 30
     },
 
     removeImage:{

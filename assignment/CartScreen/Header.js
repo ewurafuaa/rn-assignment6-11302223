@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
         top: 68,
         width: 99,
         height: 40,
-        left: 190,
+        left: 160,
         
     },
 
     search:{
         top: 73,
-        right:65,
+        right:45,
         width: 30,
         height: 30
     },
