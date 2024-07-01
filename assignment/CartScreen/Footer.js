@@ -1,6 +1,10 @@
 import { StyleSheet, View, Text, Image} from "react-native";
+import { useCart } from "../CartContext";
 
 export default function Footer(){
+    const {cart} = useCart();
+
+    const totalAmount = cart.reduce((sum, item) => sum + parseFloat(item.price.replace('$', '')), 0)
     return(
         <View style={styles.footer}>
             <View style={styles.checkoutButton}>
@@ -10,7 +14,7 @@ export default function Footer(){
 
             <View style={styles.total}>
                 <Text style={styles.totalText}>EST. TOTAL</Text>
-                <Text style={styles.totalAmount}>$240</Text>
+                <Text style={styles.totalAmount}>${totalAmount.toFixed(0)}</Text>
             </View>
         </View>
     )
