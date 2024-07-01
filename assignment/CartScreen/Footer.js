@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         paddingVertical: 15,
+        height: 150
     },
 
     checkoutButton: {
@@ -33,8 +34,9 @@ const styles = StyleSheet.create({
         borderWidth: 200,
         borderTopWidth: 32,
         borderBottomWidth: 32,
+        height: 100,
         left: 19,
-        top: 13,
+        top: 32,
     },
 
     shoppingBag: {
@@ -52,15 +54,11 @@ const styles = StyleSheet.create({
         
     },
 
-    total:{
-        backgroundColor: '#FFFFF'
-    },
-
     totalText: {
         fontSize: 18,
         fontWeight: '300',
         color: '#000000',
-        bottom: 30,
+        bottom: 10,
         right: 345,
         letterSpacing: 4
     },
@@ -69,7 +67,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '400',
         color: '#D18035',
-        bottom: 52,
+        bottom: 34,
         right: 35,
         letterSpacing: 4
     }

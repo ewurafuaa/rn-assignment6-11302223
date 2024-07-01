@@ -7,7 +7,7 @@ import Checkout from "./Checkout";
 export default function CartScreen(){
     return(
         <View style={styles.container}>
-            <ScrollView styles={styles.scroll}>
+            <ScrollView contentContainerStyle={styles.scroll}>
             <Header/>
             <Checkout/>
             </ScrollView>
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     },
 
     scroll: {
-        flex: 1,
+        flexGrow: 1,
+        paddingBottom: 80
     }
 })

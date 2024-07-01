@@ -8,7 +8,7 @@ export default function Header(){
             <Image style={styles.search} source={require('../assets/Search.png')}></Image>
         </View>
 
-        <View>
+        <View style={styles.checkoutContainer}>
         <Image style={styles.bottomLine} source={require('../assets/bottomLine.png')}></Image>
         <Text style={styles.checkout}>CHECKOUT</Text>
         </View>
@@ -18,45 +18,49 @@ export default function Header(){
 
 const styles = StyleSheet.create({
     header: {
-        flex: 1,
+        flexDirection: 'row',
         justifyContent: 'space-between',
         alignContent: 'center',
         flexDirection: 'row',
-        borderColor: 'black',
         width: '100%',
     },
 
     logo:{
-        top: 68,
         width: 99,
         height: 40,
-        left: 160,
-        
+        top: 60,
+        left: 160
     },
 
     search:{
-        top: 73,
-        right:45,
         width: 30,
-        height: 30
+        height: 30,
+        top: 65,
+        right: 30
+    },
+
+    checkoutContainer:{
+        position: 'relative',
+        alignItems: 'center',
+        marginTop: 20,
+        height: 100,
     },
 
     checkout: {
-        top: 50,
-        fontSize: 30,
+        position: 'absolute',
+        top: 70,
+        right: 103,
+        fontSize: 27,
         letterSpacing: 6,
+        fontWeight: '300',
         alignSelf: 'center',
-        fontWeight:'300',
     },
 
     bottomLine: {
-        top: 125,
+        position: 'absolute',
+        top: 80,
         width: 200,
         height: 60,
-        right: 10,
         alignSelf: 'center',
     },
-
-
-
 })

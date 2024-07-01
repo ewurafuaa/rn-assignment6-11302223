@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         padding: 20,
-        backgroundColor: '#FFFFF'
+        backgroundColor: '#FFFFF',
     },
 
     cartList: {
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         padding: 13,
         alignItems: 'center',
         position: 'relative',
-        top: 65,
+        top: 15,
         
     },
 

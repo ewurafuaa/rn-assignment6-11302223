@@ -7,7 +7,7 @@ import Products from "./Products";
 function HomeScreen({navigation}){
     return(
     <View style={styles.container}>
-        <ScrollView>
+        <ScrollView contentContainerStyle={styles.scroll}>
         <Header navigation={navigation}/>
         <OurStory/>
         <Products/>
@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor: '#FFFFFF'
+    },
+
+    scroll:{
+        flexGrow: 1
     }
 })
 
