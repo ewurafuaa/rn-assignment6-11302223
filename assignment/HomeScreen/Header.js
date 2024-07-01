@@ -45,18 +45,18 @@ const styles = StyleSheet.create({
     logo:{
         width: 99,
         height: 40,
-        left: 20
+        left: 21
     },
-
+    
     iconsContainer: {
         flexDirection: 'row',
         alignItems: 'center'
     },
-    
+
     search:{
         width: 30,
-        height: 30,
-        marginRight: 20,
+        height: 30, 
+        marginRight: 20
     },
 
     shoppingBag: {
@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     
     button: {
         position: 'relative',
-        
     }
 })
 
