@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'space-between',
         padding: 33,
-        top: 55,
+        bottom: 4,
         height: 1530
       },
     

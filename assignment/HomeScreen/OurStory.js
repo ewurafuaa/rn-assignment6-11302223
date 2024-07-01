@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 
     title:{
         fontSize: 28,
-        top: 85,
+        top: 25,
         left: 20,
         fontWeight: '300'
     },
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
         backgroundColor: '#FAFAFD',
-        top: 80,
+        top: 15,
         left: 50
     },
 
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
         backgroundColor: '#FAFAFD',
-        top: 80,
+        top: 15,
         right: 20
     }
 })
