@@ -1,16 +1,21 @@
-import { StyleSheet, View, Image, Text} from "react-native";
+import React from "react";
+import { StyleSheet, View, Image, Text, TouchableOpacity} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Header(){
+    const navigation = useNavigation();
     return(
         <>
         <View style={styles.header}>
-            <Image style={styles.logo} source={require('../assets/Logo.png')}></Image>
+            <TouchableOpacity style={styles.return} onPress={() => navigation.navigate('Home')}>
+                <Image style={styles.logo} source={require('../assets/Logo.png')}></Image>
+            </TouchableOpacity>
             <Image style={styles.search} source={require('../assets/Search.png')}></Image>
         </View>
 
         <View style={styles.checkoutContainer}>
-        <Image style={styles.bottomLine} source={require('../assets/bottomLine.png')}></Image>
-        <Text style={styles.checkout}>CHECKOUT</Text>
+            <Image style={styles.bottomLine} source={require('../assets/bottomLine.png')}></Image>
+            <Text style={styles.checkout}>CHECKOUT</Text>
         </View>
         </>
     )
@@ -21,22 +26,27 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignContent: 'center',
-        flexDirection: 'row',
         width: '100%',
+        paddingTop: 20,
+        paddingHorizontal: 20
+    },
+
+    return: {
+        position: 'absolute',
+        left: 160,
+        top: 60
     },
 
     logo:{
         width: 99,
         height: 40,
-        top: 60,
-        left: 160
     },
 
     search:{
         width: 30,
         height: 30,
-        top: 65,
-        right: 30
+        top:45,
+        left: 330,
     },
 
     checkoutContainer:{

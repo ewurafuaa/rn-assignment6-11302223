@@ -4,11 +4,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Checkout from "./Checkout";
 
-export default function CartScreen(){
+export default function CartScreen({navigation}){
     return(
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scroll}>
-            <Header/>
+            <Header navigation={navigation}/>
             <Checkout/>
             </ScrollView>
             <Footer/>
