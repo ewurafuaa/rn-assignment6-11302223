@@ -19,6 +19,7 @@ export default function CartScreen(){
 const styles = StyleSheet.create({
     container:{
         flex:1,
+        backgroundColor: '#FFFFFF'
     },
 
     scroll: {

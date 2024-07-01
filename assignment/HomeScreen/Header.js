@@ -1,6 +1,10 @@
-import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import React from "react";
+import { StyleSheet, View, Image, TouchableOpacity} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
-function Header(){
+export default function Header(){
+    const navigation = useNavigation();
+
     return(
     <View style={styles.container}>
         <View>
@@ -9,9 +13,10 @@ function Header(){
         <View>
             <Image style={styles.logo} source={require('../assets/Logo.png')}></Image>
         </View>
-        <View>
+
+        <View style={styles.iconsContainer}>
             <Image style={styles.search} source={require('../assets/Search.png')}></Image>
-            <TouchableOpacity onPress={() => navigation.navigate('Cart')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Cart')}>
             <Image style={styles.shoppingBag} source={require('../assets/shoppingBag.png')}></Image>
             </TouchableOpacity>
         </View>
@@ -23,44 +28,47 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'space-between',
-        alignContent: 'center',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        paddingTop: 60,
+        paddingBottom: 10,
         flexDirection: 'row',
         borderColor: 'black',
         width: '100%',
     },
 
     menu: {
-        top: 72,
-        left: 20,
         width: 30,
         height:33
     },
 
     logo:{
-        top: 68,
         width: 99,
         height: 40,
-        alignSelf: 'center'
+        left: 20
     },
 
+    iconsContainer: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
     
     search:{
-        top: 73,
-        right: 70,
         width: 30,
-        height: 30
+        height: 30,
+        marginRight: 20,
     },
 
     shoppingBag: {
-        top: 43,
-        right: 20,
         width: 30,
         height: 30
     },
-
-
     
+    button: {
+        position: 'relative',
+        
+    }
 })
 
-export default Header;
+
 
