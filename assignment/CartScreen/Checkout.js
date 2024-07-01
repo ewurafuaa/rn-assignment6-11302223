@@ -1,12 +1,14 @@
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { useCart } from "../CartContext";
 
-const cart =[
-    {id: '1', name: 'OFFICE WEAR', description: 'Office wear for you office', price: '$120', image: require('../assets/dress1.png'), remove: require('../assets/remove.png')},
-    {id: '2', name: 'LAMEREI', description: 'Recycle Boucle Knit Cardigan Pink', price: '$120', image: require('../assets/dress4.png'), remove: require('../assets/remove.png')},
-    {id: '3', name: 'CHURCH WEAR', description: 'Recycle Boucle Knit Cardigan Pink', price: '$120', image: require('../assets/dress3.png'), remove: require('../assets/remove.png')},
-]
+const CartList = ({item}) => {
+    const {dispatch} = useCart()
 
-const CartList = ({item}) => (
+    const removeFromCart = () => {
+        dispatch({type: 'REMOVE_FROM_CART', payload: item.id})
+    }
+
+    return(
     <View style={styles.cartList}>
         <Image source={item.image} style={styles.productImage} />
         <View style={styles.productDetails}>
@@ -15,14 +17,16 @@ const CartList = ({item}) => (
             <Text style={styles.price}>{item.price}</Text>
         </View>
         <View>
-            <TouchableOpacity style={styles.removeButton}>
+            <TouchableOpacity style={styles.removeButton} onPress={removeFromCart}>
                 <Image source={item.remove} style={styles.removeImage} />
             </TouchableOpacity>
         </View>
     </View>
+    )
+}
 
-)
 export default function Checkout(){
+    const {cart} = useCart();
     
     return(
         <View style={styles.container}>
@@ -84,13 +88,12 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems: 'center',
         height: '100%',
-        right: 30
+        right: 30,
     },
 
     removeImage:{
         width: 20,
         height: 20,
-        bottom:14
     },
     
 })
