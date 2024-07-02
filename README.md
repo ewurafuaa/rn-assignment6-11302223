@@ -34,9 +34,15 @@ This app is wired in such a way that the Home Screen displays a list of availabl
 
 ## Screenshots of the App
 ### HomeScreen
-![IMG-20240702-WA0005](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/b2b34dc1-039d-4e4b-8905-567dd3a1a967)
-![IMG-20240702-WA0003](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/7e01b07b-1903-4799-b1b1-ba7d939f6142)
-![IMG-20240702-WA0002](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/d0ec6c90-ac4c-4cb2-9276-1444c28fa6ca)
 ![IMG-20240702-WA0001](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/48d42202-eafd-4041-a9d4-b32b9c1974b7)
-![IMG-20240702-WA0006](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/52ea2a91-5646-4a9d-99a4-4cdedfc83d79)
+
 ![IMG-20240702-WA0004](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/2a5f6f4e-a9dd-4266-a94e-43c03e903c1a)
+### Cart Screen
+![IMG-20240702-WA0005](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/b2b34dc1-039d-4e4b-8905-567dd3a1a967)
+
+![IMG-20240702-WA0003](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/7e01b07b-1903-4799-b1b1-ba7d939f6142)
+
+![IMG-20240702-WA0002](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/d0ec6c90-ac4c-4cb2-9276-1444c28fa6ca)
+
+![IMG-20240702-WA0006](https://github.com/ewurafuaa/rn-assignment6-11302223/assets/170051346/52ea2a91-5646-4a9d-99a4-4cdedfc83d79)
+
